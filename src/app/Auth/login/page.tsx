@@ -1,4 +1,6 @@
+"use client"
 import React, { useState, ChangeEvent, FormEvent } from "react";
+import Link from "next/link";
 
 interface FormData {
   username: string;
@@ -25,6 +27,7 @@ export default function LoginForm(): JSX.Element {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+       <div className="text-2xl font-bold mb-10"><span className="text-indigo-500">Sign in</span> to access to our admin dashboard</div>
       <h1 className="text-3xl font-bold mb-6 text-center">Login</h1>
       <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-lg">
         <form onSubmit={handleSubmit}>
@@ -63,8 +66,20 @@ export default function LoginForm(): JSX.Element {
             </button>
           </div>
         </form>
-        <p className="mt-4 text-gray-600 text-center">Don't have an account? <a href="/register" className="text-blue-500 hover:text-blue-600">Register</a></p>
+        <p className="mt-4 text-gray-600 text-center">Don't have an account? <a href="/Auth/signup" className="text-blue-500 hover:text-blue-600">Register</a></p>
+       
+
+        
       </div>
+      
+      <Link href="/" className="mt-4">
+            <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+              Go Back to Home page
+            </button>
+      </Link>    
+      <footer className="mt-8 text-gray-600 text-center">
+        <p>&copy; 2024 HomeIn. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
