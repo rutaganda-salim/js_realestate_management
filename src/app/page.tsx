@@ -3,6 +3,9 @@ import Services from "./components/Services";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import TestimonialSlider from "./components/TestimonialSlider";
+import AboutUs from "./components/AboutUs";
+import Contact from "./components/Contact";
+
 
 
 
@@ -20,10 +23,10 @@ export default function HomePage() {
              <TestimonialSlider />
             </section>
             <section id="about">
-                {/* About Us section content */}
+              <AboutUs />
             </section>
             <section id="contact">
-                {/* Contact section content */}
+                <Contact />
             </section>
         </div>
     );

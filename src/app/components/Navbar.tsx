@@ -11,7 +11,7 @@ export default function Navbar() {
                 <li className="hover:text-indigo-600"><a href="#about">About Us</a></li>
                 <li className="hover:text-indigo-600"><a href="#contact">Contact</a></li>
             </ul>
-            <button className="bg-indigo-400 text-white px-4 py-2 rounded hover:bg-indigo-500 font-semibold">Sign up</button>
+            <button className="bg-indigo-400 text-white px-4 py-2 rounded hover:bg-indigo-500 font-semibold">Get Started</button>
         </nav>
     );
 }

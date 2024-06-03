@@ -7,3 +7,39 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+/* styles/styles.css */
+
+/* For Webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #527fc3; /* Color of the scrollbar handle */
+    border-radius: 2px; /* Radius of the scrollbar handle */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #cbd5e0; /* Color of the scrollbar track */
+  }
+  
+  /* For Firefox */
+  body {
+    scrollbar-width: thin; /* Width of the scrollbar */
+  }
+  
+  body::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #b1bed0; /* Color of the scrollbar handle */
+    border-radius: 5px; /* Radius of the scrollbar handle */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #d1dae3; /* Color of the scrollbar track */
+  }
+  
