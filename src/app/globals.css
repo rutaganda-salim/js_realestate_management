@@ -42,4 +42,8 @@
   body::-webkit-scrollbar-track {
     background: #d1dae3; /* Color of the scrollbar track */
   }
+
+  html{
+    scroll-behavior: smooth;
+  }
   

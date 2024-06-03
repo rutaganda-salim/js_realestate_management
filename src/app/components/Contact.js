@@ -1,5 +1,7 @@
 "use client"
 import { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt, faPhoneAlt, faInstagram } from '@fortawesome/free-solid-svg-icons';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -22,9 +24,9 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-       <h1 className="text-3xl font-bold mb-6 text-center">Contact Us</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center">Contact Us</h1>
       <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-lg">
-       
+
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="name" className="block text-gray-700 font-bold mb-2">Name</label>
@@ -74,6 +76,22 @@ export default function Contact() {
             </button>
           </div>
         </form>
+        <div className="mt-4 text-center">
+          <div className="flex items-center justify-center mb-2">
+            <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
+            <p>493 Radison Blu, Kigali, Rwanda</p>
+          </div>
+          <div className="flex items-center justify-center mb-2">
+            <FontAwesomeIcon icon={faPhoneAlt} className="mr-2" />
+            <p>+250 788 574 365</p>
+          </div>
+          <div className="flex items-center justify-center">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">
+              <FontAwesomeIcon icon={faInstagram} className="mr-2" />
+              <p>@homein</p>
+            </a>
+          </div>
+        </div>
       </div>
       <footer className="mt-8 text-gray-600 text-center">
         <p>&copy; 2024 HomeIn. All rights reserved.</p>

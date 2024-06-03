@@ -5,9 +5,8 @@ import Image from "next/image";
 export default function AboutUs() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white p-6">
-    <h1 className="text-4xl font-bold mb-4 text-center">About Us</h1>
-
       <div className="max-w-4xl bg-white p-8 rounded-lg shadow-lg">   
+      <h1 className="text-4xl font-bold mb-4 text-center">About Us</h1>
         <p className="text-xl text-gray-700 text-center mb-8">
           Welcome to our Real Estate Management System. Our mission is to make property management efficient and effortless.
         </p>
