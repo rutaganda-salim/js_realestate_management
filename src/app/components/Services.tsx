@@ -47,7 +47,7 @@ export default function Services() {
     ];
 
     return (
-        <section className="p-8 ">
+        <section className="p-8" id='Services'>
             <div className="max-w-screen-lg mx-auto h-full flex flex-col justify-center">
                 <h2 className="text-4xl font-bold text-center mb-8">Our Services</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

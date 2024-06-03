@@ -2,6 +2,9 @@
 import Services from "./components/Services";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import TestimonialSlider from "./components/TestimonialSlider";
+
+
 
 export default function HomePage() {
     return (
@@ -10,11 +13,11 @@ export default function HomePage() {
             <section id="home">
                 <Hero />
             </section>
-            <section id="services">
+            <section id="Services">
                 <Services />
             </section>
             <section id="testimonials">
-                {/* Testimonials section content */}
+             <TestimonialSlider />
             </section>
             <section id="about">
                 {/* About Us section content */}
