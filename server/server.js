@@ -4,6 +4,7 @@ const session = require("express-session");
 const MongoDBStore = require("connect-mongodb-session")(session);
 const connectDB = require("./config/db");
 const authRoutes = require("./routes/auth");
+const houseRoutes = require("./routes/house");
 
 require("dotenv").config();
 
@@ -19,7 +20,7 @@ const store = new MongoDBStore({
 app.use(express.json());
 app.use(
   session({
-    secret: "your-secret-key",
+    secret: process.env.SECRET_KEY,
     resave: false,
     saveUninitialized: false,
     store,
@@ -27,6 +28,7 @@ app.use(
 );
 
 app.use("/api/auth", authRoutes);
+app.use("/api/houses", houseRoutes);
 
 const PORT = process.env.PORT || 5000;
 
